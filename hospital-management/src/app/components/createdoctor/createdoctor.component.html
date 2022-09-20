@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+             <!-- create doctor page heading starts-->
+             <div>
+                <h2 class="createdoc-heading">Welcome to create doctor Page</h2>
+            </div>
+            <!-- create doctor page heading ends-->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+          <!-- add doctor button -->
+          <button type="button" class="btn btn-primary adddoc-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add Doctor
+          </button>
+  
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title doctor-h2" id="exampleModalLabel">Create Doctor</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- form starts -->
+
+         <form>
+             <!-- doctor name starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Doctor Name</label>
+                <input type="text" class="form-control" name="doctorName" id="name" [(ngModel)]="doctor.doctorName" aria-describedby="emailHelp"/>
+             </div>
+              <!-- doctor name ends-->
+
+               <!-- doctor age starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-3">Age</label>
+                <input type="text" class="form-control" name="doctorAge" id="age" [(ngModel)]="doctor.doctorAge" aria-describedby="emailHelp"/>
+             </div>
+              <!-- doctor age ends-->
+
+               <!-- doctor gender starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-3">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="doctorGender" id="gender" value="male" [(ngModel)]="doctor.doctorGender" aria-describedby="emailHelp"/>
+                    <label class="form-check-label ml-3">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="doctorGender" id="gender" value="female" [(ngModel)]="doctor.doctorGender" aria-describedby="emailHelp"/>
+                    <label class="form-check-label">Female</label>
+                </div>
+             </div>
+
+              <!-- doctor gender ends-->
+
+               <!-- doctor specilization starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-3">Specilization</label>
+                <input type="text" class="form-control" name="doctorSpecilization" id="specilization" [(ngModel)]="doctor.doctorSpecilization" aria-describedby="emailHelp"/>
+             </div>
+              <!-- doctor specilization ends-->
+
+
+
+         </form>
+
+         <!-- form ends-->
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary footer-clsbtn" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary footer-savbtn" (click)="saveDoctor()">Save Doctor</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+</div>
+
+
+

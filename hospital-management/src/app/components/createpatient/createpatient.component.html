@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+             <!-- create patient page heading starts-->
+             <div>
+                <h2 class="createpat-heading">Welcome to create patient Page</h2>
+            </div>
+            <!-- create patient page heading ends-->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+          <!-- add patient button -->
+          <button type="button" class="btn btn-primary addpat-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add Patient
+          </button>
+  
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title patient-h2" id="exampleModalLabel">Create Patient</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- form starts -->
+
+         <form>
+             <!-- patient name starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Patient Name</label>
+                <input type="text" class="form-control" name="patientName" id="name" [(ngModel)]="patient.patientName" aria-describedby="emailHelp"/>
+             </div>
+              <!-- patient name ends-->
+
+               <!-- visited doctor starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-3">Visited Doctor</label>
+                <select class="form-control" name="visitedDoctor" id="visitdoc" [(ngModel)]="patient.visitedDoctor" aria-describedby="emailHelp">
+                  <option *ngFor="let doc of doctor" value="{{doc.doctorName}}">{{doc.doctorName}}</option>
+                </select>
+             </div>
+              <!-- visited doctor ends-->
+
+               <!-- date of visit starts-->
+
+             <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-3">Date of Visit</label>
+                <input type="date" class="form-control" name="dateOfVisit" id="DOV" [(ngModel)]="patient.dateOfVisit" aria-describedby="emailHelp"/>
+             </div>
+
+              <!-- date of visit ends-->
+
+         </form>
+
+         <!-- form ends-->
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary footer-clsbtn" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary footer-savbtn" (click)="savePatient()">Save patient</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+</div>
+
+
+
+  

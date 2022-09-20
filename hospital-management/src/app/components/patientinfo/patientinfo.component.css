@@ -1,0 +1,43 @@
+.patientinfo-heading{
+    color:rgb(107, 148, 26);
+    background-color: rgb(194, 227, 240);
+    text-align: center;
+    padding:1rem 0rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif ;  
+    text-transform: capitalize;
+}
+
+.patientinfo-label{
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.patient-search{
+    background-color: rgb(248, 194, 245);
+    margin-top: 1rem;
+    height:50px;
+}
+
+.table{
+    border:1px solid grey;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2rem;
+    padding:10rem;
+    text-align: center;   
+}
+.table-heading{
+    color:green;
+    padding:1rem;
+    border: 1px solid grey;
+    background-color: rgb(178, 241, 236);   
+}
+
+.table-body{
+    padding:1rem;
+    border: 1px solid grey;
+    background-color: rgb(205, 238, 177);
+}

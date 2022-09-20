@@ -1,0 +1,61 @@
+.createpat-heading{
+    color:rgb(107, 148, 26);
+    background-color: rgb(194, 227, 240);
+    text-align: center;
+    padding:1rem 0rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif ; 
+    text-transform: capitalize; 
+}
+
+.addpat-button{
+    width:400px;
+    display: block;
+    margin: 2rem auto 0 auto;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    
+}
+
+.addpat-button:hover{
+    background-color: rgb(219, 145, 145);
+    color:blueviolet;
+}
+
+
+.patient-h2{
+    color:green;
+    width:100%;
+    background-color: rgb(240, 205, 222);
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+form{
+    background-color: rgb(225, 195, 247);
+    padding:1rem;
+    border-radius: 10px;
+}
+
+.form-label{
+    color:navy;
+}
+
+.footer-savbtn{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    
+}
+
+.footer-clsbtn{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+

@@ -1,0 +1,17 @@
+.navbar-brand{
+    color:Green;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand:hover{
+    color:blue
+}
+
+
+
+.navbar-collapse{
+display: flex;
+justify-content: flex-end;
+}
+

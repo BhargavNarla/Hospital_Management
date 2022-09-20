@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- doctor info page heading starts-->
+            <div>
+                <h2 class="dcotorinfo-heading">Welcome to Doctor Information Page</h2>
+            </div>
+            <!-- doctor info page heading ends-->
+ 
+            <!-- doctor info page search for doctor starts-->
+            <div>
+                <label class="doctorinfo-label">Search doctor By Name :</label>
+                <input type="search" [(ngModel)]="doctorName" (ngModelChange)="doctorSearch()" name="name" class="form-control doctor-search" placeholder="search doctor name here"/>
+            </div>
+
+            <!-- doctor info page search for doctor ends-->
+
+            <!-- patient info table for doctor starts -->
+
+            <div>
+                <table class="table table-striped">
+
+                    <!-- patient info table heading for doctor starts -->
+                     <thead>
+                         <th class="table-heading">Id</th>
+                         <th class="table-heading">Doctor Name</th> 
+                         <th class="table-heading">Doctor Age</th>
+                         <th class="table-heading">Doctor Gender</th>
+                         <th class="table-heading">Doctor Specilization</th> 
+                     </thead>
+
+                     <!-- patient info table heading for doctor ends -->
+
+                     <!-- patient info table data for doctor starts -->
+                     <tbody>
+
+                       <tr *ngFor="let doc of doctors">
+                           <td class="table-body">{{doc.id}}</td>
+                           <td  class="table-body">{{doc.doctorName}}</td>
+                           <td  class="table-body">{{doc.doctorAge}}</td>
+                           <td  class="table-body">{{doc.doctorGender}}</td>
+                           <td  class="table-body">{{doc.doctorSpecilization}}</td>
+                       </tr>
+
+                     </tbody>
+
+                     <!-- patient info table data for doctor ends -->
+
+                </table>
+            </div>
+
+             <!-- patient info table for doctor ends -->
+            
+        </div>
+    </div>
+</div>

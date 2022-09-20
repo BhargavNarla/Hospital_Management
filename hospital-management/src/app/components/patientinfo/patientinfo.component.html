@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- patient info page heading starts-->
+            <div>
+                <h2 class="patientinfo-heading">Welcome to patient Information Page</h2>
+            </div>
+            <!-- patient info page heading ends-->
+ 
+            <!-- patient info page search for patient starts-->
+            <div>
+                <label class="patientinfo-label">Search patient by ID :</label>
+                <input type="search" [(ngModel)]="id" (ngModelChange)="patientSearch()" class="form-control patient-search" placeholder="search patient name here"/>
+                
+            </div>
+
+            <!-- patient info page search for patient ends-->
+
+            <!-- patient info table for patient starts -->
+            <div>
+                <table class="table table-striped">
+
+                    <!-- patient info table heading for patient starts -->
+                     <thead>
+                         <th class="table-heading">Id</th>
+                         <th class="table-heading">Patient Name</th> 
+                         <th class="table-heading">Patient Visited Doctor</th>
+                         <th class="table-heading">Patient Date of Visit</th>
+                        
+                     </thead>
+
+                     <!-- patient info table heading for patient ends -->
+
+                     <!-- patient info table data for patient starts -->
+                     <tbody>
+
+                       <tr *ngFor="let pat of patients">
+                           <td class="table-body">{{pat.id}}</td>
+                           <td  class="table-body">{{pat.patientName}}</td>
+                           <td  class="table-body">{{pat.visitedDoctor}}</td>
+                           <td  class="table-body">{{pat.dateOfVisit}}</td>
+                           
+                       </tr>
+
+                     </tbody>
+
+                     <!-- patient info table data for patient ends -->
+
+                </table>
+            </div>
+
+            <!-- patient info table for patient ends -->
+            
+        </div>
+    </div>
+</div>
+
+
+ 
